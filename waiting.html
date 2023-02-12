@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    </head>
+    <title>Wait 5</title>
+    </head>
+    <h1 id = "heading">  Waiting... </h1>
+    <body>  
+
+
+    
+<button>  click me! </button>
+<p>  </p>
+
+    </body>
+
+    
+<script>
+
+    let tex = document.getElementById("heading");
+
+    let newClick = document.querySelector("button");
+
+
+    function normalText(){
+
+
+        tex.textContent = "Waiting...";
+        }
+
+
+    newClick.addEventListener("click",function()
+    {
+     
+
+        tex.textContent = "Wait 5 seconds";
+        setTimeout(normalText,5000);   
+    });
+    
+</script>
+    </html>
